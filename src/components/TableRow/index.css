@@ -1,0 +1,27 @@
+* {
+  list-style: none;
+}
+
+.table-row li {
+  list-style: none;
+  padding: 5px;
+}
+.table-row button {
+  border-radius: 5px;
+  padding: 7px 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.fa-star {
+  font-size: 20px;
+}
+.linkto-moredetails {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .linkto-moredetails {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.top-menu li {
+  list-style: none;
+  width: 90%;
+  height: 10%;
+  margin-top: 50px;
+  margin-left: 3%;
+  text-align: center;
+}
+.top-menu li:hover {
+  cursor: pointer;
+}
+.side-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 80px;
+  width: 250px;
+  height: 100vh;
+  right: -250px;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 1s;
+  z-index: 1;
+}
+.side-menu.active {
+  right: 0px;
+  transition: 1s;
+  z-index: 1;
+}
+.fa-palette {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .side-menu {
+    width: 150px;
+    right: -150px;
+    font-size: 15px;
+  }
+}

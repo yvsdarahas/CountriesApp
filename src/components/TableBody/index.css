@@ -1,0 +1,18 @@
+.countrylist-tablebody tr td {
+  width: 18%;
+  padding: 15px 0px;
+  border-bottom: 1px solid black;
+}
+
+.countrylist-tablebody {
+  position: absolute;
+  top: 170px;
+  z-index: -10;
+}
+
+@media screen and (max-width: 700px) {
+  .countrylist-tablebody tr td:nth-child(3),
+  .countrylist-tablebody tr td:nth-child(5) {
+    display: none;
+  }
+}
