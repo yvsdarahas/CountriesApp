@@ -19,7 +19,7 @@ const fetchDataFailure = (error: Error) => {
 export const fetchData = () => {
   return (dispatch: Dispatch) => {
     axios
-      .get('https://restcountries.com/v2/all')
+      .get('https://restcountries.com/v2/all/')
       .then((response) => {
         const countries = response.data
         dispatch(fetchDataSuccess(countries))
